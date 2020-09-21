@@ -749,7 +749,7 @@ Fork 或clone 来的仓库，一旦放置不管就会离最新的源代码越来
      检查结束后pr1 分支就没用了，可以直接删除。我们切换至pr1 之外的分支，运行下面的代码。
      $ git branch -D pr1
 
-### 采纳Pull Request(139)
+### 采纳Pull Request(143)
 
 完成上述内容后，如果Pull Request 的内容没有问题，大可打开浏览器找出相应的Pull Request 页面，点击Merge pull request 按钮，随后Pull Request 的内容会自动合并至仓库。
 
@@ -784,6 +784,36 @@ work”分支合并到gh-pages 分支。
   用这种方法处理后，仓库的Pull Request 会自动从Open 状态变为Close 状态。
 
   以上便是安全接收Pull Request 的流程
+
+## 与GitHub相互协作的工具及服务（143-178待完善）
+
+1. ### hub命令（待完善）
+
+   这里介绍的hub 命令则是一个封装了git 命令的命令行工具，能够辅助用户使用GitHub。这是个很方便的工具，经常使用GitHub 的读者请务必一试。
+
+   在hub 命令仓库的README.md 文件中，我们可以看到“git ＋ hub＝ github”这样一句话C。正如这句话所说， hub 命令将通常的git 命令进行封装并增加几项功能，就可以调用GitHub 的API 发送命令。由于其封装了git 命令，所以能够执行所有git 命令的操作。另外通过hub 命令功能还得到了扩展，比如指定GitHub 端仓库时可以用简略路径替代完整路径等。
+
+2. ### Travis CI
+
+   Travis CIA 是一款免费服务，专门托管面向开源开发组织的CI（Continuous Integration，持续集成）。
+
+   CI 是XP（Extreme Programming，极限编程）的实践之一。近年来人们普遍使用Jenkins 等软件来实现这一目的。
+
+   让CI 软件监视仓库，可以在开发者发送提交后立刻执行自动测试或构建。通过持续执行这样一个操作，可以检测出开发者意外发送的提交或无意的逻辑偏差，让代码保持在一定质量以上。如果各位正在通过GitHub 发布代码，建议使用Travis CI。Travis CI 支持Ruby、PHP、Perl、Python、Java、JavaScript 等Web 相关的语言。
+
+   - #### 实际尝试
+
+     一般情况下，只要在仓库中添加.travis.yml 这样一个Travis CI 专用的文件，Travis CI 就与GitHub 集成了。
+
+3. 
+
+## 使用GitHub的开发流程
+
+   
+
+   
+
+
 
   
 
